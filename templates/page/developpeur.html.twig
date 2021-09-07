@@ -1,0 +1,59 @@
+{% extends "base.html.twig" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset ("style/developpeur.style.css") }}">
+    <link href="{{ asset ("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap")}}" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ asset ("medias/developpeur/dev.png")}}"/>
+{% endblock %}
+
+{% block title %} | Developpeur{% endblock %}
+
+{% block body %}
+
+    <h1 class="text-center">Developpeur web</h1>
+
+    <div class="element1"></div>
+    <div class="element2"></div>
+    <div class="element3"></div>
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-11 elementBio">
+                <h2>Ma biographie</h2>
+                <p class="text-center">J'ai avant tout commencé par un bac pro Maintenance des equipements industriels. Ayant par la suite travaillé dans plusieurs secteurs et validé le C.A.C.E.S 1/3/5, j'ai acquis de bonne et large experience. Mais malgrès cela, le travail en industrie ne me plaisait pas. J'ai donc entamé de longue recherche jusqu'à tomber sur l'organisme de formation <a href="{{ asset ("https://www.wf3.fr/")}}" target="_blank" class="font-weight-bold ">Web force 3</a> qui m'a permis d'élargir mes capacités.</p>
+                <p class="text-justify">J'ai toujours été fasciné par ce monde vaste qu'est celui de l'informatique. Gardant une soif de savoir, je suis ambitieux, autodidacte et autonome, pédagogue dans tout domaine ainsi que perfectionniste à tout niveau. Je suis motivé de pouvoir vivre d'une de mes passions, à gravir les échelons et être épanoui professionnellement. En parallèle de l'informatique je suis un grand passionné de musique, je me permet donc de vous exposer quelques maquettes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-10 col-md-5 contentLeft pb-4">
+                <p>Grâce à WebForce3, j'ai acquis des connaissances de plusieurs langages:</p>
+                <ul>
+                    <li>Html / Css</li>
+                    <li>JavaScript</li>
+                    <li>Symfony</li>
+                    <li>MySql / Php</li>
+                </ul>
+                <p class="texteCentre">Sans oublier les bibliothèques:</p>
+                <ul>
+                    <li>Jquery</li>
+                    <li>Bootstrap / Bootswatch</li>
+                </ul>
+            </div>
+            <div class="col-10 col-md-6 contentRight">
+                <h2 class="mb-4">Responsive</h2>
+                <p class="text-center">Adapté pour les ordinateurs, les tablettes et les mobiles</p>
+                <div class="text-center">
+                    <img alt="Responsive" src="{{ asset ("medias/developpeur/responsive.jpg")}}">
+                </div>
+                <p class="mt-4 text-center">Il n'y a qu'à tester en reduisant la fenêtre<span style="font-size:30px;">&#128526 &#128073</span></p>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+

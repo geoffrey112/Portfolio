@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} | Monteur{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset ('style/monteur.style.css') }}">
+    <link href="{{ asset("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap")}}" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ asset ("medias/monteur/montage.png")}}"/>
+{% endblock %}
+
+{% block body %}
+
+    <h1 class="text-center">Monteur audio/vidéo</h1>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-9 col-md-8 col-lg-6 col-xl-6 elementTexte">
+                <div class="line">
+                    <p class="mt-4 mb-4">Par le biais de ses vidéos, je vais vous faire part de mes compétences en montage Audio / Vidéos. Voici donc quelque maquettes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contenuVideo">
+        <div class="row justify-content-around">
+            <div>
+                <iframe width="350" height="250" src="{{ asset("https://www.youtube.com/embed/06mmLminKuI")}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="bulle">
+                    <div class="effetText">
+                        <h3 class="text-center pt-4">Trailer Siana:</h3>
+                        <p class="text-center mt-4">Projet en collaboration avec <a href="{{ asset ("https://www.facebook.com/R-P-339906759933869/?__tn__=%2Cd%2CP-R&eid=ARDjfBtNxTZBwIrthR5NcBZl2J91cC4lG10e8xg2yt3dbm_ldCGPqeH6WEV0LFUHE42hBLcVM2KnWo3k")}}" target="_blank">RP prod</a>. Un trailer de lancement encore en cours d'un futur court-métrage</p>
+                    </div>
+                    <i class="fas fa-lg fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <div>
+                <iframe width="350" height="250" src="{{ asset ("https://www.youtube.com/embed/zZHpQP3AfG8")}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="bulle">
+                    <div class="effetText">
+                        <h3 class="text-center pt-4">Présentation de la JCI:</h3>
+                        <p class="text-center mt-4">Maquette pour la Jeune <a href="{{ asset ("https://jci.cc/fr")}}" target="_blank">chambre internationale</a></p>
+                    </div>
+                    <i class="fas fa-lg fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <div>
+                <iframe width="350" height="250" src="{{ asset ("https://www.youtube.com/embed/PIBX-iMr9L8")}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="bulle">
+                    <div class="effetText">
+                        <h3 class="text-center pt-4">Starlight:</h3>
+                        <p class="text-center mt-4">Montage et avant tout une reprise de la musique <a href="{{ asset ("https://www.youtube.com/watch?v=h61QG4s0I3U")}}" target="_blank">The Supermen Lovers - Starlight</a></p>
+                    </div>
+                    <i class="fas fa-lg fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

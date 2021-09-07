@@ -1,0 +1,65 @@
+h1{
+    font-size: 45px;
+    padding-top:30px;
+    color:white;
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+.elementBio{
+    background-color:#4d4d4d;
+    font-size:18px;
+    border-radius: 10px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+h2{
+    margin-top:30px;
+    font-weight: bold;
+    font-size:30px;
+    color:white;
+    font-family: 'IM Fell French Canon SC', serif;
+    width:200px;
+    display:inline-block;
+}
+
+.elementBio>p>a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.elementBio>p>a:hover{
+    color:#438be9;
+    transition-duration:0.5s;
+}
+
+.lienLinked{
+    height:70px;
+    align-self: center;
+}
+
+i{
+    position:relative;
+    top:30px;
+}
+
+
+/* SM et -*/
+@media (max-width: 767.98px){
+
+    .maps{
+        width:500;
+        height:300px;
+    }
+}
+
+
+/* XS */
+@media (max-width: 575.98px){
+
+    .maps{
+        width:400px;
+        height:300px;
+    }
+
+}

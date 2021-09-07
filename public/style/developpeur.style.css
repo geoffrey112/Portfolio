@@ -1,0 +1,157 @@
+h1{
+    font-size: 45px;
+    padding-top:30px;
+    color:white;
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+.element1{
+    position:absolute;
+    left:80px;
+    top:280px;
+    width:15%;
+    height:13px;
+    background-color:#4d4d4d;
+    border-radius:0px 0px 0px 9px;
+}
+
+.element2{
+    position:absolute;
+    background-color:#4d4d4d;
+    border-radius:0px 0px 0px 9px;
+    width:13px;
+    height:140px;
+    top:153px;
+    left:80px;
+}
+
+.element3{
+    position:absolute;
+    top:123px;
+    left:66px;
+    border-bottom:30px solid #4d4d4d;
+    border-left:20px solid transparent;
+    border-right:20px solid transparent;
+}
+
+.elementBio{
+    background-color:#4d4d4d;
+    font-size:16px;
+    border-radius: 10px;
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom:10px;
+    margin-bottom:80px;
+}
+
+h2{
+    margin-top:30px;
+    font-weight: bold;
+    font-size:35px;
+    color:white;
+    text-align:center;
+}
+
+.elementBio>h2{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin-bottom:30px;
+    margin-right:auto;
+    margin-left:auto;
+    width:300px;
+    height:50px;
+    padding-top:8px;
+}
+
+.elementBio>p>a:hover{
+    text-decoration: none;
+    color:#438be9;
+    transition-duration: 0.5s;
+}
+
+.elementBio>p{
+    font-size:18px;
+}
+
+.contentLeft{
+    font-size:18px;
+    box-shadow: 3px 3px 5px 2px inset black;
+    padding-left:30px;
+    padding-top:30px;
+    margin-bottom:80px;
+}
+
+.contentRight{
+    background-color:#4d4d4d;
+    border-radius: 10px;
+    margin-bottom:80px;
+}
+
+.contentRight>p{
+    font-size:20px;
+}
+
+.contentRight>h2{
+    text-decoration: underline;
+}
+
+
+/* SM et - */
+@media (max-width: 767.98px){
+
+    .contentLeft{
+        margin:0 auto;    
+    }
+
+    .contentRight{
+        margin:50px auto;
+    }
+
+}
+
+/* SM */
+@media (max-width: 767.98px){
+
+    .element1{
+        width:8%;
+    }
+
+    .element2{
+        z-index:-1;
+    }
+
+    .element3{
+        z-index:-1;
+    }
+
+}
+
+/* XS */
+@media (max-width: 575.98px){
+
+    h1{
+        padding-top:10px;
+    }
+
+    .element1{
+        display:none;
+    }
+
+    .element2{
+        display: none;
+    }
+
+    .element3{
+        position:absolute;
+        left:60px;
+        top:158px;
+        border-bottom:35px solid #4d4d4d;
+        border-left:25px solid transparent;
+        border-right:25px solid transparent;
+    }
+
+    .elementBio{
+        margin-top:-23px;
+    }
+
+}

@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary position">
+    <div class="container-fluid p-0">
+    
+        <div class="row justify-content-start col-lg-4 col-md-6 m-0">
+            <img src="{{ asset ('/medias/navbar/Geoffrey.jpg')}}" width="85" alt="Img de Geoffrey">
+            <div class="portfolio">
+                <a href="{{ path ('home')}}">Mon portfolio</a>
+                <img class="pointeur" src="{{ asset('medias/navbar/pointeur.png')}}" alt="Pointeur">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNav" aria-controls="navbarMenuNav01" aria-expanded="false" aria-label="Bouton menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="navbar-toggler ml-3 boutonForm" type="button" data-toggle="collapse" data-target="#utilisateur" aria-controls="navbarUtilisateur01" aria-expanded="false" aria-label="Bouton formulaire">
+                    <span>login</span>
+                </button>
+            </div>
+        </div>
+
+        {# Formulaire MD uniquement #}
+        <div class="col-md-5 contenuFormRespons">
+            <div class="row justify-content-end col-12">
+                <input class="elementFormPseudo mt-1" type="text" placeholder="Pseudo">
+            </div>
+            <div class="row justify-content-end col-12">
+                <input class="elementFormPass mt-1" type="password" placeholder="Mot de passe">
+            </div>
+            <div class="row justify-content-end col-12">    
+                <button type="submit" class="btn btn-primary mt-1 mb-1 validerRespons">Valider</button>
+            </div>
+        </div>
+
+        {# Menu Dropdown #}
+        <div class="row align-self-start col-lg-5 contentMenu">
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav text-center text-nowrap">
+                    <li class="nav-item active">
+                        <a class="nav-link lien btn" href="{{ path ('developpeur')}}">Developpeur web<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link lien bouton btn" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Musique-Vidéo
+                            <img class="chevron" src="https://img.icons8.com/fluent/17/000000/expand-arrow.png"/>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{{ path ('auteur')}}">Auteur/Compositeur</a>
+                            <div class="dropdown-divider" style="background-color:white;"></div>
+                            <a class="dropdown-item" href="{{ path ('monteur') }}">Monteur audio/vidéo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item contentItem m-auto">
+                        <a class="nav-link btn" href="{{ path ('contact')}}">Me contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        {# Formulaire #}
+        <div class="col-lg-3 contenuForm">
+            <div class="collapse navbar-collapse" id="utilisateur">
+                <div class="col-lg-11 contentForm">
+                    <input class="elementFormPseudo mt-1" type="text" placeholder="Pseudo">
+                    <input class="elementFormPass mt-1" type="password" placeholder="Mot de passe">
+                    <button type="submit" class="btn btn-primary mt-1 mb-1 valider">Valider</button>
+                </div>
+            </div>
+        </div>
+
+    </div>            
+</nav>
+

@@ -1,0 +1,274 @@
+.police{
+    font-family: 'Spartan', sans-serif;
+}
+
+::selection{
+  background-color:white;
+  color:black;
+}
+
+body::-webkit-scrollbar{
+    background-color:#4d4d4d00;
+    width:13px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient(#0059ced7 20%,#00c0c0ab);
+    border-radius:20px;
+    box-shadow: inset 0 0 6px rgba(37, 37, 37, 0.993);
+}
+
+body::-webkit-scrollbar-button{
+    height:0;
+}
+
+/*** Navbar ***/
+
+.position{
+    position:sticky;
+    top:0px;
+    z-index:10;
+}
+
+img{
+    margin:5px;
+}
+
+.portfolio{
+    height:60px;
+    margin:auto auto;
+    margin-left:20px;
+    padding:8px;
+    padding-top:13px;
+    font-size:22px;
+    border-right: 2px groove #04c3fd;
+    border-left: 2px groove #04c3fd;
+}
+
+.portfolio>a:hover{
+    text-decoration:none;
+}
+
+.pointeur{
+    width:23px;
+    height:23px;
+    position:absolute;
+    top:42px;
+    transform: translate(-80%, 20%);
+}
+
+.elementFormPseudo{
+    border-radius:0px 0px 40px 0px;
+    outline:none;
+}
+
+.elementFormPass{
+    border-radius:0px 0px 40px 0px;
+    outline:none;
+}
+
+.validerRespons{
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size:14px;
+    margin-right:50px;
+}
+
+.valider{
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size:14px;
+    margin:0 50px;
+}
+
+.chevron{
+    margin-left:-1px;
+}
+
+
+/*** Footer ***/
+    .footer{
+        background-color:rgba(0, 0, 0, 0.555);
+        height:120px;
+    }
+
+    .footer>h3{
+        font-weight: bold;
+        font-size:25px;
+        color:white;
+        font-family: 'IM Fell French Canon SC', serif;
+    }
+
+    .contenuFooter>a:nth-child(1){
+        color:#6d6d6d;
+        display:block;
+        width:80px;
+        text-align:center;
+    }
+
+    .contenuFooter>a:nth-child(2){
+        color:#6d6d6d;
+        display:block;
+        width:140px;
+        text-align:center;
+    }
+
+    .contenuFooter>a:hover{
+        text-decoration: none;
+        background-color:#00b800;
+        transition-duration: 0.5s;
+        color:white;
+        border-radius: 10px;
+    }
+
+    .contenuFooter>a:nth-child(2):hover{
+        text-decoration: none;
+        transition-duration: 0.5s;
+        background-color:#003cff;
+    }
+/*************/
+
+
+/* LG et + */
+@media (min-width: 992px){
+
+    .contenuFormRespons{
+        display:none;
+    }
+
+   .bouton{
+       height:56px;
+   }
+
+}
+
+
+/* MD */
+@media (min-width: 768px) and (max-width: 991.98px){
+
+    .contenuForm{
+        display:none;
+    }
+
+    .lien{
+        width:60%;
+        margin:0 auto;
+    }
+
+    .dropdown-menu{
+        text-align:center;
+        width:60%;
+        margin:0 auto;
+    }
+
+    .pointeur{
+        left:275px;
+    }
+
+    .boutonForm{
+        display:none;
+    }
+
+    .contentMenu{
+        background-color:#3a3f44;
+        position:absolute;
+        top:106px;
+        padding:0;
+    }
+
+    .contentItem{
+        width:80%;
+    }
+}
+
+/* SM et - */
+@media (max-width: 767.98px){
+
+    .contenuFormRespons{
+        display:none;
+    }
+
+    .lien{
+        width:80%;
+    }
+
+    .pointeur{
+        left:275px;
+        top:43px;
+    }
+
+    .boutonForm{
+        height:40px;
+        margin-top:5px;
+    }
+
+    .elementFormPseudo{
+        border-radius:40px 0px 0px 0px;
+        padding-left:15px;
+    }
+
+    .valider{
+        margin:0 155px;
+    }
+
+    .contentMenu{
+        background-color:#41464b;
+        position:absolute;
+        top:80px;
+        margin:0 220px;
+        width:250px;
+        padding:0;
+        z-index:9;
+    }
+
+    .contentItem{
+        width:100%;
+    }
+
+    .portfolio{
+        padding-top:6px;
+    }
+
+    .contenuForm{
+        position:absolute;
+        top:102px;
+        left:0;
+        background-color:#41464b;
+        width:100%;
+    }
+
+    .contentForm{
+        margin:0 auto;
+        width:410px;
+    }
+
+}
+
+/* SM */
+@media (min-width: 576px) and (max-width: 767.98px){
+
+    .nav-link{
+        margin:0 auto; 
+        width:100%;
+    }
+
+    .dropdown-menu{
+        text-align: center;
+        margin:0 auto;
+    }
+
+}
+
+/* XS */
+@media (max-width: 575.98px){
+
+    .nav-link{
+        margin:0 auto;
+        width:100%;
+    }
+
+    .dropdown-menu{
+        text-align: center;
+        margin:0 auto;
+    }
+}

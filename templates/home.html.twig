@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset ("style/home.style.css") }}">
+    <link href="{{ asset ("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap")}}" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ asset ("medias/Logo Echizen.png")}}"/>
+{% endblock %}
+
+{% block title %} | Accueil{% endblock %}
+
+{% block body %}
+
+    {# <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="contentUser">
+                <h1>{{ titre }}</h1>
+            </div>
+        </div>
+    </div> #}
+        
+
+    <h2 class="pl-2 mb-5">Les nouveautés:</h2>
+
+    <div class="container-fluid px-5 mt-5" style="margin-bottom:77px">
+        <div class="row justify-content-around centrer">
+            <iframe class="contentLeft" width="340" height="250" src="{{ asset("https://www.youtube.com/embed/06mmLminKuI")}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="contentMiddle">
+                <span>?</span>
+            </div>
+            <div class="contentRight">
+                <span>?</span>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

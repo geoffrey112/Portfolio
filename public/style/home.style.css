@@ -1,0 +1,81 @@
+.contentUser{
+    font-family: 'Acme', sans-serif;
+    text-align:center;
+    box-shadow: 0px 0px 3px 3px rgba(0, 255, 255, 0.800), 0px 0px 5px 6px rgb(68, 0, 255, 0.800);
+    background-color:rgba(0, 0, 0, 0.800);
+    color:rgb(255, 255, 255);
+    width:600px;
+    position:fixed;
+    z-index:9;
+}
+
+h2{
+    margin-top:100px;
+    border-bottom:2px solid;
+    width:500px;
+}
+
+.contentLeft{
+    margin-top:30px;
+}
+
+.contentMiddle{
+    border: 2px dotted grey;
+    width:340px;
+    height:250px;
+    margin-top:30px;
+}
+
+.contentRight{
+    border: 2px dotted grey;
+    width:340px;
+    height:250px;
+    margin-top:30px;
+    margin-bottom:80px;
+}
+
+.contentMiddle>span{
+    font-size:30px;
+    display:flex;
+    height:100%;
+    justify-content: center;
+    align-items:center;
+}
+
+.contentRight>span{
+    font-size:30px;
+    display:flex;
+    height:100%;
+    justify-content: center;
+    align-items:center;
+}
+
+/* SM et - */
+@media (max-width: 767.98px){
+
+    .contentUser{
+        width:98.6%;
+    }
+
+    .titreNew{
+        width:400px;
+    }
+
+    iframe{
+        width:470px;
+    }
+
+    .centrer{
+        justify-content: center;
+    }
+
+    .contentMiddle{
+        width:470px;
+    }
+
+    .contentRight{
+        width:470px;
+    }
+
+}
+

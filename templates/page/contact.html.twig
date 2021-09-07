@@ -1,0 +1,48 @@
+{% extends "base.html.twig" %}
+
+{% block title %} | Me Contacter{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset ("style/contact.style.css")}}">
+    <link href="{{ asset("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap")}}" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ asset ("medias/contact/Contact.png")}}"/>
+{% endblock %}
+
+{% block body %}
+
+    <h1 class="text-center">Contact</h1>
+
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-11 col-lg-10 col-xl-9 elementBio">
+                <p class="px-3">Si vous souhaitez me contacter ou si vous avez une question sur quoi que ce soit, n'hésitez pas, je laisse mon adresse mail ci-dessous:</p>
+                <p class="px-3">Mon adresse mail: <a href="mailto:geoffrey.legall@orange.fr">geoffrey.legall@orange.fr</a></p>
+                <p class="px-3 mb-4">Vous me retrouverez aussi sur les reseaux:</p>
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <a href="https://www.facebook.com/geoffrey.legall.1?ref=bookmarks" target="_blank">
+                            <img src="{{ asset ('medias/contact/facebook.png')}}" width="120" height="90" alt="facebook">
+                        </a>
+                        <a class="lienLinked" href="https://www.linkedin.com/in/geoffrey-le-gall-7686b7195/" target="_blank">
+                            <img class="linked" src="{{ asset ('medias/contact/in.png')}}" width="230" height="60" alt="Linked In">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h2>Où je me situe</h2>
+        <i class="fas fa-3x fa-level-down-alt"></i>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <iframe class="maps" src="{{ asset ("https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23313.3276589289!2d7.867187015806272!3d48.927937286141955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796ed8adfbeaba5%3A0x40a5fb99a394640!2s67250%20Soultz-sous-For%C3%AAts!5e0!3m2!1sfr!2sfr!4v1585319201435!5m2!1sfr!2sfr")}}" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" alt="Google Map"></iframe>
+        </div>
+    </div>
+
+    
+
+{% endblock %}

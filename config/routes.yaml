@@ -1,0 +1,24 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+home:
+  path: /
+  controller: App\Controller\HomeController::home
+
+contact:
+  path: /contact
+  controller: App\Controller\HomeController::contact
+
+developpeur:
+  path: /developpeur
+  controller: App\Controller\HomeController::developpeur
+
+auteur:
+  path: /auteur
+  controller: App\Controller\HomeController::auteur
+
+monteur:
+  path: /monteur
+  controller: App\Controller\HomeController::monteur
+

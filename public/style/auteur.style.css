@@ -1,0 +1,133 @@
+h1{
+    font-size: 45px;
+    padding-top:30px;
+    color:white;
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+.elementTexte{
+    background-color:#4d4d4d;
+    font-size:16px;
+    border-radius: 10px;
+}
+
+.line{
+    margin-left:60px;
+    margin-right:60px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+}
+
+.line>p{
+    text-align: center;
+    width:80%;
+    margin:auto;
+}
+
+.line>p>a:hover{
+    text-decoration: none;
+    color:red;
+    transition-duration:0.5s;
+}
+
+.contenuVideo{
+    margin-top:80px;
+    margin-bottom:20px;
+}
+
+.bulle{
+    height:150px;
+    width:400px;
+    font-size:18px;
+    background-color:#4d4d4d57;
+    transform: translate(0%, -75%);
+}
+
+.bulle>i{
+    text-align: center;
+    width:100%;
+    position: absolute;
+    bottom:13px;
+    z-index:-1;
+}
+
+.effetText>h3{
+    text-decoration: underline;
+    font-size:22px;
+}
+
+
+/* Effet Bulle-texte */
+
+    .bulle:hover{
+        transform: translate(0%, -5%);
+        transition-duration: 0.5s;
+    }
+
+    .effetText{
+        opacity:0;
+        height:150px;
+        margin:0;
+        padding:0;
+        background-color:#ff910067;
+    }
+    
+    .effetText:hover{
+        opacity: inherit;
+        transition-duration: 0.5s;
+        transition-delay: 0.4s;
+    }
+
+    iframe{
+        position:relative;
+        z-index:1;
+    }
+
+/* MD */
+@media (min-width: 768px) and (max-width: 991.98px){
+    
+    iframe{
+        width:500px;
+    }
+
+    .bulle{
+        width:500px;
+    }
+
+}
+
+
+/* SM et - */
+@media (max-width: 767.98px){
+
+    iframe{
+        width:450px;
+    }
+
+    .bulle{
+        width:450px;
+        height:200px;
+    }
+
+    .effetText{
+        height:200px;
+    }
+
+}
+
+
+/* XS */
+@media (max-width: 575.98px){
+
+    h1{
+        font-size:40px;
+        padding-top:10px;
+    }
+
+    .effetText{
+        padding-left:8px;   
+        padding-right:8px; 
+    }
+
+}
