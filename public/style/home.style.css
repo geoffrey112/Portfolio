@@ -1,4 +1,4 @@
-.contentUser{
+/* .contentUser{
     font-family: 'Acme', sans-serif;
     text-align:center;
     box-shadow: 0px 0px 3px 3px rgba(0, 255, 255, 0.800), 0px 0px 5px 6px rgb(68, 0, 255, 0.800);
@@ -7,7 +7,7 @@
     width:600px;
     position:fixed;
     z-index:9;
-}
+} */
 
 h2{
     margin-top:100px;
@@ -17,19 +17,19 @@ h2{
 
 .contentLeft{
     margin-top:30px;
+    border: 2px dotted grey;
 }
 
 .contentMiddle{
     border: 2px dotted grey;
-    width:340px;
-    height:250px;
     margin-top:30px;
+
 }
 
 .contentRight{
     border: 2px dotted grey;
-    width:340px;
-    height:250px;
+    width:380px;
+    height:270px;
     margin-top:30px;
     margin-bottom:80px;
 }
